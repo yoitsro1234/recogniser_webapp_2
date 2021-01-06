@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <h1>Image Recogniser Web-App</h1>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <h3>LEGO Minecraft Steve, Scissors, Sharpener, Ruler, Notebook and the color Black.</h3>
+
+      <label>Webcam View - </label>
+
+      <div id="webcam-view"></div>
+
+      <br><br>
+
+      <button id="take_photo" onclick="capture()" class="btn btn-info">Take Picture</button>
+
+      <div id="result"></div>
+
+      <br><br>
+
+      <br><br>
+
+      <button id="identify_image" onclick="identify()" class="btn btn-info">Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px;" id="object_identification">Object :  </p> <p id="object_name"></p>
+      <p style="font-size: 22px;" id="accuracy_identification">Accuracy :  </p> <p id="object_accuracy"></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
